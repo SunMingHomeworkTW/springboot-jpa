@@ -41,7 +41,7 @@ public class EmployeeJPATest {
         //1.查询名字是小红的employee
         Employee expectedEmployee = new Employee("xiaohong",19,"female",7000,1, 1);
 
-        String actualName = null;
+        String actualName = employeeRepository.findEmployeeByName("xiaohong").getName();
         assertThat(actualName).isEqualTo(expectedEmployee.getName());
     }
 

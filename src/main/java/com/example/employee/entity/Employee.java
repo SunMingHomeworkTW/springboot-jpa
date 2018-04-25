@@ -1,17 +1,31 @@
 package com.example.employee.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Employee")
 public class Employee {
+    @Id
+    @Column(name = "id")
     private int id;
+    @Column(name = "name")
     private String name;
+    @Column(name = "age")
     private int age;
+    @Column(name = "gender")
     private String gender;
+    @Column(name = "companyId")
     private int companyId;
+    @Column(name = "salary")
     private int salary;
 
     public Employee() {
     }
 
-    public Employee(int id, String name, int age, String gender, int companyId, int salary) {
+    public Employee(String name, int age, String gender, int salary, int companyId,int id) {
         this.id = id;
         this.name = name;
         this.age = age;
