@@ -12,5 +12,3 @@ spring:
       naming:
         implicitStrategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
         physicalStrategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-flyway:
-  baseline-on-migrate: true
